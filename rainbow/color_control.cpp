@@ -1,0 +1,1 @@
+int* shiftColor(int* color);
