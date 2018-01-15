@@ -24,13 +24,13 @@ void setup() {
 }
 
 void loop() {
-  red = random(256);
-  green = random(256);
-  blue = random(256);  
+  red = random(2);
+  green = random(2);
+  blue = random(2);  
    
-  cd[0][0] = red;
-  cd[0][1] = green;
-  cd[0][2] = blue;
+  cd[0][0] = red*255;
+  cd[0][1] = green*255;
+  cd[0][2] = blue*255;
   
   pixels.setPixelColor(0, pixels.Color(cd[0][0],cd[0][1],cd[0][2])); 
     
