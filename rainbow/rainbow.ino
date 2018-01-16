@@ -17,6 +17,10 @@ double cd[NUMPIXELS][3];
 void setup() {
   pixels.begin(); 
   randomSeed(analogRead(0));
+
+  pixels.setBrightness(50);
+  
+  
   for (int i = 0; i < NUMPIXELS; i++){
     cd[i][0] = 1;
     cd[i][1] = 1;
@@ -26,7 +30,7 @@ void setup() {
   color[0] = 1;
   color[1] = 1;
   color[2] = 1;
-  
+
   goalColor[0] = 1;
   goalColor[1] = 1;
   goalColor[2] = 1;
