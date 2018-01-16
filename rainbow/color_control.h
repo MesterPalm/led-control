@@ -1,6 +1,1 @@
-#include "color_control.h"
-
-int* shiftColor(int* color){
-  
-  //return retColor;
-}
+void shiftColor(double* color, double* goalColor, double shiftSpeed);
